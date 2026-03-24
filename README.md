@@ -217,15 +217,6 @@ O programa irá:
 * python-dotenv
 
 ---
-
-# Melhorias futuras
-
-* Adicionar mais lojas
-* Criar histórico de preços
-* Criar dashboard web
-* Automatizar execução (cron / task scheduler)
-* Dockerizar o projeto
-
 ---
 
 # Autor
