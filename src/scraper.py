@@ -132,7 +132,7 @@ def samsung(page):
         # --- Preço (qualquer elemento que tenha €) ---
         selector_data = "[data-discountprice], [data-modelprice], [data-modelrevenue]"
         # Espera até 5 segundos por um desses atributos
-        page.wait_for_selector(selector_data, state="attached", timeout=5000)
+        page.wait_for_selector(selector_data, state="attached", timeout=15000)
         elemento_preco = page.locator(selector_data).first
             
         # Prioridade: Preço com desconto > Preço do modelo
