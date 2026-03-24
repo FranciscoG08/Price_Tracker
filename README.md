@@ -54,8 +54,6 @@ Estrutura da folha:
 
 Quando o preço de um produto baixa, é enviado automaticamente um email.
 
-![Email](Images/email.png)
-
 Exemplo de mensagem:
 
 ```id="k8d4f7"
