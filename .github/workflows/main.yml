@@ -2,8 +2,8 @@ name: Price Tracker
 
 on:
   schedule:
-    # Corre todos os dias às 09:00 UTC
-    - cron: '20 21 * * *'
+    # Corre 2 em 2 dias às 09:00 UTC
+    - cron: '0 8 */2 * *'
   workflow_dispatch: # Permite-te correr o código clicando num botão no GitHub
 
 jobs:
@@ -25,7 +25,7 @@ jobs:
 
       - name: Executar o Tracker
         env:
-          # Aqui ligamos os Secrets do GitHub às variáveis que o teu código lê
+          
           EMAIL: ${{ secrets.EMAIL }}
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
           GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
