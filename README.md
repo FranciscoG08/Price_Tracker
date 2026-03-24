@@ -217,7 +217,6 @@ O programa irá:
 * python-dotenv
 
 ---
----
 
 # Autor
 
