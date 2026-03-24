@@ -1,4 +1,4 @@
-# Price Tracker
+# 🚀 Price Tracker
 
 Sistema automatizado para **monitorização de preços de produtos online**.
 
@@ -8,7 +8,19 @@ Utiliza **Playwright para scraping**, **Google Sheets API para armazenamento** e
 
 ---
 
-# Funcionalidades
+# 🤖 Automação e Cloud (GitHub Actions)
+
+O projeto está configurado para ser **100% autónomo** através do GitHub Actions. O sistema executa o scraping na nuvem sem necessidade de intervenção humana ou de manter o computador ligado.
+
+![GitHub Actions](Images/Actions.png)
+
+* **Agendamento:** Execução automática de 2 em 2 dias.
+* **Segurança:** Gestão de credenciais sensíveis via **GitHub Secrets**.
+* **Eficiência:** Tempo médio de execução de 5 a 8 minutos.
+
+---
+
+# 📋 Funcionalidades
 
 * Monitorização automática de preços
 * Scraping de várias lojas online
@@ -17,7 +29,7 @@ Utiliza **Playwright para scraping**, **Google Sheets API para armazenamento** e
 * Envio automático de alertas por email
 * Suporte para várias lojas
 
-### Lojas suportadas
+### 🏢 Lojas suportadas
 
 * Worten
 * Amazon
@@ -32,7 +44,7 @@ Utiliza **Playwright para scraping**, **Google Sheets API para armazenamento** e
 
 ---
 
-# Exemplo da folha Google Sheets
+# 📊 Exemplo da folha Google Sheets
 
 Os produtos a monitorizar são definidos numa folha Google Sheets.
 
@@ -193,7 +205,7 @@ config/credentials.json
 
 ---
 
-# Executar o programa
+# 💻 Executar o programa
 
 ```id="4x7b3k"
 python src/main.py
@@ -209,7 +221,7 @@ O programa irá:
 
 ---
 
-# Dependências principais
+# 🛠️ Dependências principais
 
 * playwright
 * gspread
@@ -218,6 +230,6 @@ O programa irá:
 
 ---
 
-# Autor
+# 👤 Autor
 
 Francisco Guedes
