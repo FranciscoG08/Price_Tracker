@@ -12,7 +12,7 @@ Utiliza **Playwright para scraping**, **Google Sheets API para armazenamento** e
 
 O projeto está configurado para ser **100% autónomo** através do GitHub Actions. O sistema executa o scraping na nuvem sem necessidade de intervenção humana ou de manter o computador ligado.
 
-![GitHub Actions](Images/Actions.png)
+![GitHub Actions](Images/Action.png)
 
 * **Agendamento:** Execução automática de 2 em 2 dias.
 * **Segurança:** Gestão de credenciais sensíveis via **GitHub Secrets**.
