@@ -1,3 +1,4 @@
+#-> python src/main.py ## Para correr o programa
 from google_apis import get_sheet_data, add_new_product_row,update_product_price
 from play_wright import get_product_data,cleaned_link
 from email_sender import send_email
@@ -53,12 +54,12 @@ def main():
             add_new_product_row(sheet,index,store,name,first_price,last_price)
             print("Produto Novo adicionado")
 
-        if(price < first_price):
-            preco_anterior=price
-            print(f"Alerta\n\t->Produto: {name}\n\t-> Novo Preco {price:.2f}")
+        
+        if (price < last_price):
+            print(f"O produto: {name}\nBaixou de {last_price:.2f}€ para {price:.2f}€")
             #Adicionar à lista alertas -> Será o formato que aparecerá no Mail
             alerts.append(
-                f"O produto: {name}\nBaixou de {preco_anterior:.2f}€ para {price:.2f}€\nLink:{link}"
+                f"O produto: {name}\nBaixou de {last_price:.2f}€ para {price:.2f}€\nLink:{link}"
             )
             # Atualizamos as variáveis para gravar na folha
             last_price = price
